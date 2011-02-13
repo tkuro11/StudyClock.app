@@ -114,6 +114,10 @@ inline static int min(int a,int b)
 	NSDateComponents* comp = [cal components:NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit
 									fromDate:today];
 	hour = [comp hour];
+	if (!enable24) {
+		if (hour > 12) hour -= 12;
+		else if (hour == 0) hour = 12;
+	}
 	minute = [comp minute];
 	second = [comp second];
 
