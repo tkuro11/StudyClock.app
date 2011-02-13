@@ -149,7 +149,7 @@ inline static double innerProduct(NSPoint p1, NSPoint p2)
 
 -(void)mouseUp:(NSEvent *)theEvent
 {
-	[reading setStringValue:[dictateTime dictateHour:hour Minute:minute Second:second]];
+	//[reading setStringValue:[dictateTime dictateHour:hour Minute:minute Second:second]];
 }
 
 -(void)mouseDown:(NSEvent *)theEvent
